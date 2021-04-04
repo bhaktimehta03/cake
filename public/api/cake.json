@@ -1,0 +1,18 @@
+[
+    {
+        "cakeId":1,
+        "CategoryId":[1,2],
+        "cakeName":"birthday",        
+        "photo":["img1","img2"],
+        "desc":"happy birthday",
+        "options":
+        {
+            "shape":["circle, heart"],
+            "size":["1lb","1.5lb"],
+            "tier":[1,2],
+            "flavor":["rasmalai","chocolate","vanilla"],
+            "frosting":["wippedcream","buttercream"]
+        }
+
+    }
+]

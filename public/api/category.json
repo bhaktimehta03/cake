@@ -1,0 +1,57 @@
+[
+    
+    { 
+        "categoryId":1,
+        "categoryName":"Vday",
+        "startDate":"02-03-2001",
+        "endDate":"05-05-2001",
+        "photo":"imagepath",
+        "tagLine":"Love is in the air",
+        "featured":"true",
+        "hidden":"false"
+    },
+
+    {
+        "categoryId":2,
+        "categoryName":"bday",
+        "startDate":"02-03-2001",
+        "endDate":"05-05-2001",
+        "photo":"imagepath",
+        "tagLine":"Love is in the air",
+        "featured":"true",
+        "hidden":"false"
+    },
+    
+    {
+        "categoryId":3,
+        "categoryName":"christmas",
+        "startDate":"02-03-2001",
+        "endDate":"05-05-2001",
+        "photo":"imagepath",
+        "tagLine":"Love is in the air",
+        "featured":"true",
+        "hidden":"false"
+    },
+    {
+        "categoryId":4,
+        "categoryName":"diwali",
+        "startDate":"02-03-2001",
+        "endDate":"05-05-2001",
+        "photo":"imagepath",
+        "tagLine":"Love is in the air",
+        "featured":"true",
+        "hidden":"false"
+    },
+    {
+        "categoryId":5,
+        "categoryName":"babyshower",
+        "startDate":"02-03-2001",
+        "endDate":"05-05-2001",
+        "photo":"imagepath",
+        "tagLine":"Love is in the air",
+        "featured":"true",
+        "hidden":"false"
+    }
+   
+    
+]

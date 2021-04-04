@@ -1,0 +1,34 @@
+[
+    {
+        "id":1,
+        "image": "imagepath",
+        "name": "bhakti",
+        "ratings": 2,
+        "ago": "Date",
+        "desc": "description"
+    },
+    {
+        "id":2,
+        "image": "imagepath",
+        "name": "milan",
+        "ratings": 2,
+        "ago": "Date",
+        "desc": "description"
+    },
+    {
+        "id":3,
+        "image": "imagepath",
+        "name": "miti",
+        "ratings": 2,
+        "ago": "Date",
+        "desc": "description"
+    },
+    {
+        "id":4,
+        "image": "imagepath",
+        "name": "misha",
+        "ratings": 2,
+        "ago": "Date",
+        "desc": "description"
+    }
+]
