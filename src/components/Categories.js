@@ -4,6 +4,7 @@ function Categories(props){
     console.log("hi1",props);
     return(
         <div>
+            <div>hi</div>
             <div>{props.categy.categoryId}</div>
             <div>{props.categy.categoryName}</div>
             <div>{props.categy.startDate}</div>
