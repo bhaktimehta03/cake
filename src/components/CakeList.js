@@ -23,7 +23,7 @@ class CakeList extends React.Component {
         const cake1 = this.state.cake;
         console.log("cake1", this.state.cake)
         return (
-            <div>
+            <div className="row">
 
                 {
                     cake1 && cake1.length ? cake1.map(
