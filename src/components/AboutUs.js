@@ -9,7 +9,7 @@ function AboutUs() {
             <div>email:</div>
             <div>phone:</div>
             <div>address:</div>
-            <div>hllo</div>
+
         </div>
     );
 
