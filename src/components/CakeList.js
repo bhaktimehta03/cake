@@ -19,6 +19,7 @@ class CakeList extends React.Component {
 
     }
     //test
+    //test 2
 
     render() {
         const cake1 = this.state.cake;
