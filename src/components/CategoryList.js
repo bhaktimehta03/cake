@@ -21,6 +21,7 @@ class CategoryList extends React.Component {
                 this.setState({ errorMsg: "error retriving data" })
             })
     }
+    //asdf 
 
     render() {
         const catgy = this.state.category;
