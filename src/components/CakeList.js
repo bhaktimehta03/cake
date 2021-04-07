@@ -18,6 +18,7 @@ class CakeList extends React.Component {
             .catch((errorMsg) => this.setState({ errorMsg: "error retriving data" }))
 
     }
+    //test
 
     render() {
         const cake1 = this.state.cake;
