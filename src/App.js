@@ -19,11 +19,7 @@ function App() {
         </Switch>
       </BrowserRouter>
 
-      <div className="row">
-        <div className="col-12">
-          <CallNow ></CallNow>
-        </div>
-      </div>
+
     </div>
   );
 }
