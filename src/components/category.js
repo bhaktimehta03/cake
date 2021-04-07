@@ -1,52 +1,29 @@
 import React from 'react'
-import axios from 'axios'
-import Categories from './Categories.js'
 
+function Category(props) {
+    console.log("hi1", props);
+    return (
+        <div class="col-12 col-sm-4  col-lg-2 " style={{ padding: "20px" }}>Category
 
-class Category extends React.Component
-{
-    constructor(props){
-        super(props)
-            
-        this.state={category:[],errorMsg:""}
-    }
+            <div class="  border" >
+                <div class=" text-center description-text">
+                    <div>{props.categy.categoryId}</div>
+                    <div>{props.categy.categoryName}</div>
+                    <div>{props.categy.photo}</div>
+                    <div>{props.categy.tagLine}</div>
+                </div>
 
-    componentDidMount(){
-        axios.get('/api/category.json')
-
-        .then( (response) =>
-            {
-                this.setState({category:response.data})        
-                console.log("data" ,response.data)
-            })
-        .catch((errorMsg) =>
-            {
-                this.setState({errorMsg:"error retriving data"})
-            } )
-    }
-
-    render(){
-        const catgy=this.state.category;
-        return (
-            <div>Categories go here
-            {
-                catgy && catgy.length? catgy.map(
-                   function(item){
-                       console.log("hi",item)
-                       return  ( <Categories categy={item}></Categories>)
-                       
-                       
-                   }
-               ):"No Data"               
-            }
-            {
-                this.state.errorMsg? <div>{this.state.errorMsg}</div>:null
-            }
-                
-            </div>
-        )
-
-    }
+            </div >
+            {/* <div>{props.categy.categoryId}</div>
+            <div>{props.categy.categoryName}</div>
+            <div>{props.categy.startDate}</div>
+            <div>{props.categy.endDate}</div> 
+            <div>{props.categy.photo}</div>
+            <div>{props.categy.tagLine}</div>
+            <div>{props.categy.featured}</div>
+            <div>{props.categy.hidden}</div>  */}
+        </div >
+    )
 }
 
 export default Category;
