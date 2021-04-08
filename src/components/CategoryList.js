@@ -24,23 +24,28 @@ class CategoryList extends React.Component {
 
     render() {
         const catgy = this.state.category;
+        const callBack = this.props.updateCakeListBasedOnCatergorySeclection;
         return (
-            <div className="row">
-                {
-                    catgy && catgy.length ? catgy.map(
-                        function (item) {
-                            console.log("hi", item)
-                            return (<Category categy={item}></Category>)
+            <>
+                <div>mummy={this.props.callBackFn}</div>
+                <div className="row">
+                    {
+                        catgy && catgy.length ? catgy.map(
+                            function (item) {
+                                console.log("hi", item)
+                                return (<Category categy={item} updateCakeListBasedOnCatergorySeclection={callBack}></Category>
+                                )
 
 
-                        }
-                    ) : "No Data"
-                }
-                {
-                    this.state.errorMsg ? <div>{this.state.errorMsg}</div> : null
-                }
+                            }
+                        ) : "No Data"
+                    }
+                    {
+                        this.state.errorMsg ? <div>{this.state.errorMsg}</div> : null
+                    }
 
-            </div>
+                </div>
+            </>
         )
 
     }
