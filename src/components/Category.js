@@ -26,15 +26,17 @@ import React from 'react'
 
 function Category(props) {
 
-    function ClickEvent() {
+    function CategoryClick() {
+        props.updateCakeListBasedOnCatergorySeclection(props.categy.categoryId);
         console.log("i am in category click event", props.categy.categoryId);
     }
 
-    console.log("hi1", props);
-    return (
-        <div class="col-12 col-sm-4  col-lg-2 " style={{ padding: "20px" }}>Category
 
-            <div class="  border" onClick={ClickEvent}>
+    console.log("hi1", typeof (props.updateCakeListBasedOnCatergorySeclection));
+    return (
+        <div class="col-12 col-sm-4  col-lg-2 " style={{ padding: "20px" }}>Category : {props.updateCakeListBasedOnCatergorySeclection}
+
+            <div class="  border" onClick={CategoryClick}>
                 <div class=" text-center description-text">
                     <div>{props.categy.categoryId}</div>
                     <div>{props.categy.categoryName}</div>
