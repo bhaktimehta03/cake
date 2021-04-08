@@ -18,26 +18,32 @@ class CakeList extends React.Component {
             .catch((errorMsg) => this.setState({ errorMsg: "error retriving data" }))
 
     }
-    //test
-    //test 2
 
     render() {
         const cake1 = this.state.cake;
         console.log("cake1", this.state.cake)
         return (
-            <div className="row">
+            <div>
+                <div>showing cakes for category : {this.props.selectedCategory}</div>
+                <div className="row">
 
-                {
-                    cake1 && cake1.length ? cake1.map(
-                        function (item) {
-                            console.log("cake2", cake1);
-                            console.log("item", item);
-                            //return <div> {item.cakeId}</div>
-                            return (<Cake cake1={item}></Cake>);
-                        }
+                    {
+                        cake1 && cake1.length ? cake1.map(
+                            function (item) {
+                                console.log("cake2", cake1);
+                                console.log("item", item);
+                                //return <div> {item.cakeId}</div>
+                                return (
+                                    <>
 
-                    ) : null
-                }
+                                        <Cake cake1={item}></Cake>
+                                    </>
+                                );
+                            }
+
+                        ) : null
+                    }
+                </div>
             </div>
 
         )
