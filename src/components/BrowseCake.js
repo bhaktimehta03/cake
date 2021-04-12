@@ -1,7 +1,8 @@
 import React from 'react'
-import CategoryList from './CategoryList.js'
+import CategoryListHooks from './CategoryListHooks.js'
 import CakeList from './CakeList.js'
 import reactDom from 'react-dom';
+import CakeListHooks from './CakeListHooks.js';
 
 
 class BrowseCake extends React.Component {
@@ -20,13 +21,13 @@ class BrowseCake extends React.Component {
         //selectedCategory = 2;
         let display;
         if (!this.state.isHidden) {
-            display = <CakeList selectedCategory={this.state.selectedCategory} ></CakeList>
+            display = <CakeListHooks selectedCategory={this.state.selectedCategory} ></CakeListHooks>
 
 
         }
 
         return (<div>
-            <CategoryList updateCakeListBasedOnCatergorySeclection={this.updateCakeListBasedOnCatergorySeclection.bind(this)}></CategoryList>
+            <CategoryListHooks updateCakeListBasedOnCatergorySeclection={this.updateCakeListBasedOnCatergorySeclection.bind(this)}></CategoryListHooks>
             {display
             }</div>)
 

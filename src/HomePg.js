@@ -3,6 +3,8 @@ import BigPitch from './components/BigPitch.js';
 import SocialMedia from './components/SocialMedia.js'
 import CallNow from './components/CallNow.js'
 import Testimonials from './components/Testimonials.js'
+import LearnUSeStates from './components/LearnUseStates.js'
+
 
 function HomePage() {
   return (
